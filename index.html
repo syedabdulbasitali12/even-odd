@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even odd</title>
+</head>
+<style>
+    body{
+        text-align: center;
+    }
+</style>
+
+<body>
+
+    <h1><center><i><u><b>Condition Checking Even odd</b></u></i></center></h1><hr><hr>
+
+    <form onsubmit="doSum(); return false">
+        Num1: <input id="num1" type="number" required placeholder="Enter a number">
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <h3 id="result"> </h3>
+
+    <script>
+        function doSum() {
+            let firstNumber = +document.querySelector("#num1").value
+            let resultElement = document.querySelector("#result")
+
+            if (firstNumber%2==0) {
+                resultElement.innerHTML = "The number is Even"
+
+            } else {
+                resultElement.innerHTML = "The number is odd"}
+                
+            
+        }
+    </script>
+
+
+
+</body>
+
+</html>
